@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Basic_Login_Screen.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="16">
+
+            <!-- Your name at the top -->
+            <Label Text="David Owens"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <!-- Login Screen bold + italic -->
+            <Label Text="Login Screen"
+                   FontAttributes="Bold,Italic"
+                   FontSize="18"
+                   HorizontalOptions="Center" />
+
+            <!-- User Name field with label -->
+            <VerticalStackLayout Spacing="6">
+                <Label Text="User Name" />
+                <Entry x:Name="txtUserName"
+                       Placeholder="Enter user name"
+                       Keyboard="Default"
+                       ReturnType="Next" />
+            </VerticalStackLayout>
+
+            <!-- Password field with label -->
+            <VerticalStackLayout Spacing="6">
+                <Label Text="Password" />
+                <Entry x:Name="txtPassword"
+                       Placeholder="Enter password"
+                       IsPassword="True"
+                       ReturnType="Done" />
+            </VerticalStackLayout>
+
+            <!-- Buttons side-by-side -->
+            <Grid ColumnSpacing="12" Margin="0,8,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button Text="Login"
+                        Grid.Column="0"
+                        Clicked="OnLoginClicked" />
+
+                <Button Text="Cancel"
+                        Grid.Column="1"
+                        Clicked="OnCancelClicked" />
+            </Grid>
+
+            <!-- Message output -->
+            <Label x:Name="lblMessage"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

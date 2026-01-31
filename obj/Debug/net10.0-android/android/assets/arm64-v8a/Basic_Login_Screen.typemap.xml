@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="Basic_Login_Screen" mvid="c52ee8327af44a88a5c6249dcfd8e17f">
+  <java-to-managed>
+    <entry java-name="crc6461e563e41720061a/MainActivity" managed-name="Basic_Login_Screen.MainActivity, Basic_Login_Screen" managed-type-token-id="33554441" />
+    <entry java-name="crc6461e563e41720061a/MainApplication" managed-name="Basic_Login_Screen.MainApplication, Basic_Login_Screen" managed-type-token-id="33554442" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc6461e563e41720061a/MainActivity" managed-name="Basic_Login_Screen.MainActivity, Basic_Login_Screen" managed-type-token-id="33554441" />
+    <entry java-name="crc6461e563e41720061a/MainApplication" managed-name="Basic_Login_Screen.MainApplication, Basic_Login_Screen" managed-type-token-id="33554442" />
+  </managed-to-java>
+</api>
